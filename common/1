@@ -1,0 +1,500 @@
+   11  cd demo
+   12  cd ..
+   13  cd ted
+   14  ls
+   15  cd ..
+   16  cd dmeo
+   17  cd demo
+   18  ls
+   19  cd .
+   20  cd ..
+   21  ls
+   22  cd ..
+   23  ls
+   24  cd home
+   25  ls
+   26  sudo -i
+   27  ls
+   28  cd demo
+   29  ls
+   30  cd nix-shell/
+   31  ls
+   32  cd ..
+   33  cd test
+   34  cp /tmp/{Location.hs,Types.hs} .
+   35  ls
+   36  mv Location.hs Types.hs reflex-platform/src/
+   37  cd reflex-platform/src/
+   38  ls
+   39  vim Example.h
+   40  vim Example.hs 
+   41  vim Location.hs 
+   42  cd ..
+   43  cabal configure --ghcjs && cabal build
+   44  vim myapp.cabal
+   45  vim myapp.cabal
+   46  vim myapp.cabal
+   47  cabal configure --ghcjs && cabal build
+   48  cabal update
+   49  cabal configure --ghcjs && cabal build
+   50  cabal build
+   51  rm -r dist
+   52  cabal build
+   53  cabal configure --ghc build
+   54  cabal configure --ghc && cabal build
+   55  cd ..
+   56  mkdir myproject
+   57  cd myproject/
+   58  git init
+   59  git submodule add https://github.com/reflex-frp/reflex-platform
+   60  reflex-platform/try-reflex
+   61  mkdir common backend frontend
+   62  (cd common && cabal init)
+   63  (cd backend && cabal init)
+   64  (cd frontend && cabal init)
+   65  vim frontend/frontend.cabal 
+   66  vim backend/backend.cabal 
+   67  vim common/Common.hs
+   68  vim common/common.cabal 
+   69  vim default.nix
+   70  vim default.nix
+   71  nix-build
+   72  vim cabal.project
+   73  vim cabal-ghcjs.project
+   74  nix-shell -A shells.ghc
+   75  sudo -i
+   76  ls
+   77  cd test
+   78  ls
+   79  cd myproject/
+   80  ls
+   81  nix-shell -A shells.ghc
+   82  sudo -i
+   83  ls
+   84  cd test
+   85  shutdown now
+   86  cd test
+   87  ls
+   88  cd myproject/
+   89  ls
+   90  cd frontend/
+   91  vim Main.hs
+   92  vim Main.hs 
+   93  cd ..
+   94  cd backend/
+   95  ls
+   96  vim Main.hs 
+   97  nix-build -o backend-result -A ghc.backend
+   98  cd ..
+   99  nix-build -o backend-result -A ghc.backend
+  100  nix-build -o native-frontend-result -A ghc.frontend
+  101  nix-build -o native-frontend-result -A ghc.frontend
+  102  cd frontend/
+  103  ls
+  104  cd .
+  105  cd ..
+  106  ls
+  107  cd dist-ghcjs/
+  108  ls
+  109  ls
+  110  cd build/
+  111  ls
+  112  cd x86_64-linux/ghcjs-0.2.1/frontend-0.1.0.0/c/frontend/
+  113  ls
+  114  cd build/frontend/frontend.jsexe/
+  115  ls
+  116  ls
+  117  open index.html
+  118  firefox index.html
+  119  firefox index.html
+  120  cd ..
+  121  ls
+  122  cd ../../
+  123  ls
+  124  cd ..
+  125  ls
+  126  cd ..
+  127  ls
+  128  cd ..
+  129  ls
+  130  cd common-0.1.0.0/
+  131  ls
+  132  cd build/
+  133  ls
+  134  cd ..
+  135  cd ..
+  136  cd frontend-0.1.0.0/c/frontend/build/frontend/frontend.jsexe/
+  137  ls
+  138  grep Hello *
+  139  firefox index.html 
+  140  cd ../../../../../../../../../../
+  141  ls
+  142  cd native-frontend-result/bin/
+  143  ls
+  144  vim frontend 
+  145  cd ..
+  146  ls
+  147  cd bin/
+  148  ls
+  149  ./frontend 
+  150  cd ..
+  151  cd ..
+  152  vim frontend/Main.hs 
+  153  ls
+  154  git clone https://github.com/cfraz89/google-maps-reflex
+  155  ls
+  156  vim default.nix 
+  157  ./cabal new-build all
+  158  cabal new-build all
+  159  vim cabal
+  160  ls
+  161  ls
+  162  vim cabal.project 
+  163  vim cabal-ghcjs.project 
+  164  nix-shell -A shells.ghc --run "cabal new-build all"
+  165  ls
+  166  vim frontend/Main.hs
+  167  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  168  vim frontend/frontend.cabal 
+  169  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  170  ls
+  171  ./dist-newstyle/build/x86_64-linux/ghc-8.0.2/frontend-0.1.0.0/c/frontend/build/frontend/frontend
+  172  vim -o frontend/Main.hs google-maps-reflex/example/src/Example.hs 
+  173  vim -o frontend/Main.hs google-maps-reflex/example/app/Main.hs 
+  174  vim -o frontend/Main.hs google-maps-reflex/example/src/Example.hs 
+  175  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  176  vim -o frontend/Main.hs
+  177  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  178  vim -o frontend/Main.hs
+  179  vim frontend/frontend.cabal 
+  180  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  181  vim -o frontend/Main.hs
+  182  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  183  vim -o frontend/Main.hs
+  184  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  185  vim -o frontend/Main.hs
+  186  vim -o frontend/Main.hs
+  187  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  188  vim -o frontend/Main.hs
+  189  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  190  vim -o frontend/Main.hs
+  191  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  192  vim -o frontend/Main.hs
+  193  vim -o frontend/Main.hs
+  194  vim -o frontend/Main.hs
+  195  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  196  vim frontend/frontend.cabal 
+  197  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  198  vim -o frontend/Main.hs
+  199  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  200  vim google-maps-reflex/example/src/Example.hs 
+  201  vim google-maps-reflex/example/app/Main.hs 
+  202  vim google-maps-reflex/example/src/Example.hs 
+  203  vim -o frontend/Main.hs
+  204  vim google-maps-reflex/example/src/Example.hs 
+  205  vim -o frontend/Main.hs
+  206  vim google-maps-reflex/example/app/Main.hs 
+  207  vim -o frontend/Main.hs
+  208  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  209  vim -o frontend/Main.hs
+  210  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  211  vim -o frontend/Main.hs
+  212  vim google-maps-reflex/example/src/Example.hs 
+  213  vim -o frontend/Main.hs
+  214  vim google-maps-reflex/example/src/Example.hs 
+  215  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  216  vim google-maps-reflex/example/src/Example.hs 
+  217  vim -o frontend/Main.hs
+  218  vim google-maps-reflex/example/src/Example.hs 
+  219  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  220  vim google-maps-reflex/example/app/Main.hs 
+  221  vim google-maps-reflex/example/src/Example.hs 
+  222  vim -o frontend/Main.hs
+  223  vim google-maps-reflex/example/src/Example.hs 
+  224  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  225  vim google-maps-reflex/example/src/Example.hs 
+  226  vim -o frontend/Main.hs
+  227  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  228  vim -o frontend/Main.hs
+  229  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  230  cd test
+  231  ls
+  232  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  233  cd mypro
+  234  cd myproject/
+  235  nix-shell -A shells.ghc --run "cabal new-build frontend"
+  236  ls
+  237  ./dist-newstyle/build/x86_64-linux/ghc-8.0.2/frontend-0.1.0.0/c/frontend/build/frontend/frontend
+  238  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  239  firefox dist-ghcjs/build/x86_64-linux/ghcjs-0.2.1/frontend-0.1.0.0/c/frontend/build/frontend/frontend.jsexe/index.html 
+  240  vim frontend/
+  241  vim frontend/Main.hs 
+  242  vim frontend/Main.hs 
+  243  cd common/
+  244  ls
+  245  vim Common.hs 
+  246  cd ..
+  247  ls
+  248  vim cabal.project 
+  249  vim cabal-ghcjs.project 
+  250  cd frontend/
+  251  cp /tmp/{Types.hs Location.hs} .
+  252  cp /tmp/{Types.hs,Location.hs} .
+  253  ls
+  254  vim Types.hs 
+  255  vim Location.hs 
+  256  sudo -i
+  257  cp /tmp/locations_gps.csv .
+  258  ls
+  259  vim Main.hs 
+  260  cd ..
+  261  firefox dist-ghcjs/build/x86_64-linux/ghcjs-0.2.1/frontend-0.1.0.0/c/frontend/build/frontend/frontend.jsexe/index.html 
+  262  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  263  vim frontend/frontend.cabal 
+  264  vim frontend/frontend.cabal 
+  265  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  266  vim frontend/Types.hs 
+  267  vim frontend/Types.hs 
+  268  vim frontend/Types.hs 
+  269  vim frontend/Types.hs 
+  270  vim frontend/Types.hs 
+  271  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  272  vim frontend/Types.hs 
+  273  vim frontend/Types.hs 
+  274  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  275  vim frontend/Types.hs 
+  276  vim frontend/Types.hs 
+  277  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  278  vim frontend/Types.hs 
+  279  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  280  vim frontend/Types.hs 
+  281  vim frontend/Types.hs 
+  282  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  283  vim frontend/Types.hs 
+  284  vim frontend/Types.hs 
+  285  vim frontend/Types.hs 
+  286  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  287  vim frontend/Types.hs 
+  288  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  289  vim frontend/Types.hs 
+  290  vim frontend/Types.hs 
+  291  vim frontend/Types.hs 
+  292  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  293  vim frontend/Types.hs 
+  294  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  295  vim frontend/Types.hs 
+  296  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  297  vim frontend/frontend.cabal 
+  298  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  299  vim frontend/Main.hs 
+  300  vim frontend/Types.hs 
+  301  vim frontend/Main.hs 
+  302  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  303  vim frontend/Main.hs 
+  304  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  305  vim frontend/Main.hs 
+  306  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  307  vim frontend/Main.hs 
+  308  vim frontend/Main.hs 
+  309  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  310  vim frontend/Main.hs 
+  311  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  312  vim frontend/Main.hs 
+  313  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  314  vim frontend/Main.hs 
+  315  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  316  vim frontend/Main.hs 
+  317  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  318  vim frontend/Main.hs 
+  319  vim frontend/Main.hs 
+  320  vim frontend/Main.hs 
+  321  vim frontend/Main.hs 
+  322  vim frontend/Location.hs 
+  323  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  324  vim frontend/Location.hs 
+  325  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  326  firefox /home/demo/test/myproject/dist-ghcjs/build/x86_64-linux/ghcjs-0.2.1/frontend-0.1.0.0/c/frontend/build/frontend/frontend.jsexe/index.html 
+  327  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  328  vim frontend/Main.hs 
+  329  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  330  firefox /home/demo/test/myproject/dist-ghcjs/build/x86_64-linux/ghcjs-0.2.1/frontend-0.1.0.0/c/frontend/build/frontend/frontend.jsexe/index.html 
+  331  vim frontend/Main.hs 
+  332  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  333  vim frontend/Main.hs 
+  334  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  335  firefox /home/demo/test/myproject/dist-ghcjs/build/x86_64-linux/ghcjs-0.2.1/frontend-0.1.0.0/c/frontend/build/frontend/frontend.jsexe/index.html 
+  336  vim frontend/Main.hs 
+  337  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  338  firefox /home/demo/test/myproject/dist-ghcjs/build/x86_64-linux/ghcjs-0.2.1/frontend-0.1.0.0/c/frontend/build/frontend/frontend.jsexe/index.html 
+  339  vim frontend/Main.hs 
+  340  cp frontend/Main.hs frontend/deprecated-Main.hs
+  341  vim frontend/Main.hs
+  342  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  343  vim frontend/Main.hs
+  344  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  345  vim frontend/Main.hs
+  346  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  347  firefox /home/demo/test/myproject/dist-ghcjs/build/x86_64-linux/ghcjs-0.2.1/frontend-0.1.0.0/c/frontend/build/frontend/frontend.jsexe/index.html 
+  348  vim frontend/Main.hs
+  349  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  350  vim frontend/Main.hs
+  351  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  352  vim frontend/Main.hs
+  353  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  354  vim frontend/Main.hs
+  355  vim frontend/Main.hs
+  356  vim frontend/Main.hs
+  357  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  358  vim frontend/Main.hs
+  359  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  360  vim frontend/Main.hs
+  361  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  362  vim frontend/Main.hs
+  363  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  364  vim frontend/Main.hs
+  365  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  366  firefox /home/demo/test/myproject/dist-ghcjs/build/x86_64-linux/ghcjs-0.2.1/frontend-0.1.0.0/c/frontend/build/frontend/frontend.jsexe/index.html 
+  367  vim frontend/Main.hs
+  368  shutdown now
+  369  sudo -i
+  370  cd test
+  371  cd myproject/
+  372  ls
+  373  vim frontend/Main.hs 
+  374  vim common/Common.hs 
+  375  vim common/Common.hs 
+  376  cd ..
+  377  git clone https://github.com/imalsogreg/servant-reflex
+  378  cd servant-reflex/
+  379  ls
+  380  git submodule update --init --recursive
+  381  ./build.sh
+  382  vim deps/reflex-platform/work-on.log 
+  383  vim build.sh 
+  384  vim build.sh 
+  385  ls
+  386  vim deps/reflex-platform/work-on.log 
+  387  vim deps/reflex-platform/work-on.log 
+  388  cat deps/reflex-platform/work-on.log 
+  389  ls
+  390  cd ..
+  391  cd myproject/
+  392  ls
+  393  vim common/
+  394  cd common/
+  395  ls
+  396  vim Common.hs 
+  397  cd ..
+  398  ls
+  399  ./cabal new-build all
+  400  nix-build -o frontend-result -A ghcjs.frontend
+  401  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  402  vim common/Common.hs 
+  403  nix-shell -A shells.ghcjs --run "cabal --project-file=cabal-ghcjs.project --builddir=dist-ghcjs new-build all"
+  404  vim common/Common.hs 
+  405  vim common/Common.hs 
+  406  cd ..
+  407  git clone https://github.com/mightybyte/hsnippet
+  408  ls
+  409  cd hsnippet/
+  410  ls
+  411  cd frontend/
+  412  ls
+  413  vim src 
+  414  cd src
+  415  ls
+  416  vim Main.hs
+  417  vim HSnippet
+  418  vim HSnippet.hs 
+  419  ls
+  420  cd ..
+  421  cd src-shared
+  422  ls
+  423  cd HSnippet/
+  424  ls
+  425  cd Shared/
+  426  ls
+  427  vim Common.hs 
+  428  vim WsApi.hs 
+  429  ls
+  430  vim Types
+  431  vim Types.hs 
+  432  ls
+  433  vim Types.hs 
+  434  vim OutputParser.hs 
+  435  cd ..
+  436  ls
+  437  cd ..
+  438  cd ..
+  439  ls
+  440  cd src
+  441  ls
+  442  cd ..
+  443  cd ..
+  444  ls
+  445  cd hsnippet-lib/
+  446  ls
+  447  cd src
+  448  ls
+  449  cd HSnippet/
+  450  ls
+  451  vim Lib.hs 
+  452  ls
+  453  cd ..
+  454  cd ..
+  455  cd ..
+  456  ls
+  457  cd backend/src
+  458  ls
+  459  vim Main.hs 
+  460  cd Builder.hs
+  461  vim Builder.hs 
+  462  cd ..
+  463  cd ..
+  464  cd app/
+  465  ls
+  466  cd ..
+  467  ls
+  468  cd shared/src/
+  469  ls
+  470  cd HSnippet/
+  471  ls
+  472  cd Shared/
+  473  ls
+  474  vim Common.hs 
+  475  cd ..
+  476  cd ..
+  477  cd ..
+  478  cd ..
+  479  ls
+  480  vim ~/.bash_profile
+  481  source ~/.bash_profile 
+  482  s
+  483  s "api"
+  484  vim ~/.bash_profile
+  485  vim ~/.bash_profile
+  486  source ~/.bash_profile 
+  487  s api
+  488  grep --help
+  489   foo () { /path/to/bar "$@" fixed args; }
+  490  grep -rnw '.' -e 'api' *.hs
+  491  grep -rnw '.' -e 'api' --include \*.hs
+  492  grep -rnw '.' -e 'module' --include \*.hs
+  493  vim ~/.bash_profile 
+  494  source ~/.bash_profile 
+  495  vim ~/.bash_profile 
+  496  source ~/.bash_profile 
+  497  s api
+  498  s API
+  499  vim frontend/src/ACE.hs
+  500  shutdown now
+  501  cd test
+  502  ls
+  503  cd myproject/
+  504  ls
+  505  cd common/
+  506  ls
+  507  vim Common.hs 
+  508  history > 1
+  509  vim 1
+  510  history > 1

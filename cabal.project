@@ -1,0 +1,7 @@
+-- cabal.project
+packages:
+  common/
+  backend/
+  frontend/
+  google-maps-reflex/
+  servant-reflex/

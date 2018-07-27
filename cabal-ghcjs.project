@@ -1,0 +1,7 @@
+-- cabal-ghcjs.project
+compiler: ghcjs
+packages:
+  common/
+  frontend/
+  google-maps-reflex/
+  servant-reflex/
