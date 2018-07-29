@@ -1,0 +1,8 @@
+Configuring numtype-dk-0.5.0.1...
+Preprocessing library for numtype-dk-0.5.0.1..
+Building library for numtype-dk-0.5.0.1..
+[1 of 2] Compiling Numeric.NumType.DK.Integers ( Numeric/NumType/DK/Integers.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/NumType/DK/Integers.o )
+[2 of 2] Compiling Numeric.NumType.DK.Naturals ( Numeric/NumType/DK/Naturals.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/NumType/DK/Naturals.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in /root/.stack/snapshots/x86_64-linux-nix/lts-11.15/8.2.2/lib/x86_64-linux-ghc-8.2.2/numtype-dk-0.5.0.1-Ljj7HC8NPWNLXH75Qh9jCo
+Registering library for numtype-dk-0.5.0.1..

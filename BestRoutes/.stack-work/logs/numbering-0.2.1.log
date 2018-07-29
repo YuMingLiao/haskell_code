@@ -1,0 +1,7 @@
+Configuring numbering-0.2.1...
+Preprocessing library for numbering-0.2.1..
+Building library for numbering-0.2.1..
+[1 of 1] Compiling Data.Numbering   ( Data/Numbering.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Numbering.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in /root/haskell/test/BestRoutes/.stack-work/install/x86_64-linux-nix/lts-11.15/8.2.2/lib/x86_64-linux-ghc-8.2.2/numbering-0.2.1-3WzweT8jPxv1CzbaxUGHcV
+Registering library for numbering-0.2.1..

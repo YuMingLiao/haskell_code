@@ -1,0 +1,8 @@
+Configuring ieee754-0.8.0...
+Preprocessing library for ieee754-0.8.0..
+Building library for ieee754-0.8.0..
+[1 of 2] Compiling Numeric.IEEE     ( Numeric/IEEE.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/IEEE.o )
+[2 of 2] Compiling Data.AEq         ( Data/AEq.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/AEq.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in /root/.stack/snapshots/x86_64-linux-nix/lts-11.15/8.2.2/lib/x86_64-linux-ghc-8.2.2/ieee754-0.8.0-B9FdsnFZjDO5G55ttUSqU0
+Registering library for ieee754-0.8.0..

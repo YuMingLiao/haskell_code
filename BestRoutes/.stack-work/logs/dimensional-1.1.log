@@ -1,0 +1,24 @@
+Configuring dimensional-1.1...
+Preprocessing library for dimensional-1.1..
+Building library for dimensional-1.1..
+[ 1 of 18] Compiling Numeric.Units.Dimensional.Dimensions.TermLevel ( src/Numeric/Units/Dimensional/Dimensions/TermLevel.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/Units/Dimensional/Dimensions/TermLevel.o )
+[ 2 of 18] Compiling Numeric.Units.Dimensional.Dimensions.TypeLevel ( src/Numeric/Units/Dimensional/Dimensions/TypeLevel.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/Units/Dimensional/Dimensions/TypeLevel.o )
+[ 3 of 18] Compiling Numeric.Units.Dimensional.Dimensions ( src/Numeric/Units/Dimensional/Dimensions.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/Units/Dimensional/Dimensions.o )
+[ 4 of 18] Compiling Numeric.Units.Dimensional.UnitNames.InterchangeNames ( src/Numeric/Units/Dimensional/UnitNames/InterchangeNames.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/Units/Dimensional/UnitNames/InterchangeNames.o )
+[ 5 of 18] Compiling Numeric.Units.Dimensional.Variants ( src/Numeric/Units/Dimensional/Variants.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/Units/Dimensional/Variants.o )
+[ 6 of 18] Compiling Numeric.Units.Dimensional.UnitNames.Internal ( src/Numeric/Units/Dimensional/UnitNames/Internal.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/Units/Dimensional/UnitNames/Internal.o )
+[ 7 of 18] Compiling Numeric.Units.Dimensional.UnitNames ( src/Numeric/Units/Dimensional/UnitNames.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/Units/Dimensional/UnitNames.o )
+[ 8 of 18] Compiling Numeric.Units.Dimensional.Internal ( src/Numeric/Units/Dimensional/Internal.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/Units/Dimensional/Internal.o )
+[ 9 of 18] Compiling Numeric.Units.Dimensional.Coercion ( src/Numeric/Units/Dimensional/Coercion.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/Units/Dimensional/Coercion.o )
+[10 of 18] Compiling Numeric.Units.Dimensional ( src/Numeric/Units/Dimensional.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/Units/Dimensional.o )
+[11 of 18] Compiling Numeric.Units.Dimensional.Quantities ( src/Numeric/Units/Dimensional/Quantities.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/Units/Dimensional/Quantities.o )
+[12 of 18] Compiling Numeric.Units.Dimensional.SIUnits ( src/Numeric/Units/Dimensional/SIUnits.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/Units/Dimensional/SIUnits.o )
+[13 of 18] Compiling Numeric.Units.Dimensional.Prelude ( src/Numeric/Units/Dimensional/Prelude.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/Units/Dimensional/Prelude.o )
+[14 of 18] Compiling Numeric.Units.Dimensional.NonSI ( src/Numeric/Units/Dimensional/NonSI.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/Units/Dimensional/NonSI.o )
+[15 of 18] Compiling Numeric.Units.Dimensional.Float ( src/Numeric/Units/Dimensional/Float.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/Units/Dimensional/Float.o )
+[16 of 18] Compiling Numeric.Units.Dimensional.FixedPoint ( src/Numeric/Units/Dimensional/FixedPoint.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/Units/Dimensional/FixedPoint.o )
+[17 of 18] Compiling Numeric.Units.Dimensional.Functor ( src/Numeric/Units/Dimensional/Functor.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/Units/Dimensional/Functor.o )
+[18 of 18] Compiling Numeric.Units.Dimensional.Dynamic ( src/Numeric/Units/Dimensional/Dynamic.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/Units/Dimensional/Dynamic.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in /root/haskell/test/BestRoutes/.stack-work/install/x86_64-linux-nix/lts-11.15/8.2.2/lib/x86_64-linux-ghc-8.2.2/dimensional-1.1-I0Qjt6uy7hWFzQdspzK8R3
+Registering library for dimensional-1.1..

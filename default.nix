@@ -1,5 +1,11 @@
 # default.nix
 (import ./reflex-platform {}).project ({ pkgs, ... }: {
+
+  overrides = self: super: {
+   heist = pkgs.haskell.lib.doJailbreak super.heist;
+   map-syntax = pkgs.haskell.lib.doJailbreak super.map-syntax;
+  };
+
   packages = {
     common = ./common;
     backend = ./backend;
@@ -8,7 +14,7 @@
   };
 
   shells = {
-    ghc = ["common" "backend" "frontend"]; # "backend" "frontend"];
+    ghc = ["common" "backend" "frontend" "heist"]; # "backend" "frontend"];
     ghcjs = ["common" "frontend"];
   };
 })

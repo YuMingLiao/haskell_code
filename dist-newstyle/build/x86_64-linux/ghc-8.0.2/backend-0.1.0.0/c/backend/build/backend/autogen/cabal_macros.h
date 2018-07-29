@@ -55,6 +55,28 @@
   (major1) == 1 && (major2) == 0 && (minor) <= 3)
 #endif /* MIN_VERSION_snap_server */
 
+/* package servant-snap-0.8 */
+#ifndef VERSION_servant_snap
+#define VERSION_servant_snap "0.8"
+#endif /* VERSION_servant_snap */
+#ifndef MIN_VERSION_servant_snap
+#define MIN_VERSION_servant_snap(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  8 || \
+  (major1) == 0 && (major2) == 8 && (minor) <= 0)
+#endif /* MIN_VERSION_servant_snap */
+
+/* package snap-1.0.0.2 */
+#ifndef VERSION_snap
+#define VERSION_snap "1.0.0.2"
+#endif /* VERSION_snap */
+#ifndef MIN_VERSION_snap
+#define MIN_VERSION_snap(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  0 || \
+  (major1) == 1 && (major2) == 0 && (minor) <= 0)
+#endif /* MIN_VERSION_snap */
+
 /* package snap-core-1.0.3.1 */
 #ifndef VERSION_snap_core
 #define VERSION_snap_core "1.0.3.1"

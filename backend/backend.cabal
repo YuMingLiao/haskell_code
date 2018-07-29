@@ -21,11 +21,12 @@ executable backend
   -- other-extensions:    
   build-depends:       base >=4.8 && <4.10
                       ,common
---                      ,servant >= 0.8 && < 0.13
---                      ,snap-server >= 1.0 && < 1.1
---                      ,servant-snap >= 0.8 && < 0.9
-                      ,snap >= 1.1.1.0 && < 1.2
---                      ,snap-core >= 1.0 && < 1.1
+                      ,servant >= 0.11
+                      ,snap-server >= 1.0 && < 1.1
+                      ,servant-snap >= 0.8 && < 0.9
+                      ,snap >= 1.0 && < 1.2
+                      ,snap-core >= 1.0 && < 1.1
+--                      ,servant-server
 
 --                      ,reflex-dom == 0.4  && < 0.5
   -- hs-source-dirs:      

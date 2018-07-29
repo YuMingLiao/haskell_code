@@ -1,0 +1,7 @@
+Configuring primes-0.2.1.0...
+Preprocessing library for primes-0.2.1.0..
+Building library for primes-0.2.1.0..
+[1 of 1] Compiling Data.Numbers.Primes ( Data/Numbers/Primes.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Numbers/Primes.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in /root/.stack/snapshots/x86_64-linux-nix/lts-11.15/8.2.2/lib/x86_64-linux-ghc-8.2.2/primes-0.2.1.0-4yl4879BvB2BN6PZhDdStZ
+Registering library for primes-0.2.1.0..

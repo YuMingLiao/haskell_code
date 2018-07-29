@@ -1,0 +1,7 @@
+Configuring csv-0.1.2...
+Preprocessing library for csv-0.1.2..
+Building library for csv-0.1.2..
+[1 of 1] Compiling Text.CSV         ( Text/CSV.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Text/CSV.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in /root/.stack/snapshots/x86_64-linux-nix/lts-11.15/8.2.2/lib/x86_64-linux-ghc-8.2.2/csv-0.1.2-5XVlRF2VHhN7gZH1hR2qBp
+Registering library for csv-0.1.2..

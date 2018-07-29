@@ -1,0 +1,7 @@
+Configuring multiset-comb-0.2.4.1...
+Preprocessing library for multiset-comb-0.2.4.1..
+Building library for multiset-comb-0.2.4.1..
+[1 of 1] Compiling Math.Combinatorics.Multiset ( Math/Combinatorics/Multiset.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinatorics/Multiset.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in /root/haskell/test/BestRoutes/.stack-work/install/x86_64-linux-nix/lts-11.15/8.2.2/lib/x86_64-linux-ghc-8.2.2/multiset-comb-0.2.4.1-8XjQJbaoINJ80ZMIfw22lo
+Registering library for multiset-comb-0.2.4.1..

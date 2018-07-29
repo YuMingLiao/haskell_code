@@ -1,0 +1,31 @@
+Configuring generic-lens-0.5.1.0...
+Preprocessing library for generic-lens-0.5.1.0..
+Building library for generic-lens-0.5.1.0..
+[ 1 of 25] Compiling Data.Generics.Internal.Families.Changing ( src/Data/Generics/Internal/Families/Changing.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Internal/Families/Changing.o )
+[ 2 of 25] Compiling Data.Generics.Internal.HList ( src/Data/Generics/Internal/HList.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Internal/HList.o )
+[ 3 of 25] Compiling Data.Generics.Internal.Families.Has ( src/Data/Generics/Internal/Families/Has.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Internal/Families/Has.o )
+[ 4 of 25] Compiling Data.Generics.Internal.Families.Collect ( src/Data/Generics/Internal/Families/Collect.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Internal/Families/Collect.o )
+[ 5 of 25] Compiling Data.Generics.Internal.Families ( src/Data/Generics/Internal/Families.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Internal/Families.o )
+[ 6 of 25] Compiling Data.Generics.Internal.Lens ( src/Data/Generics/Internal/Lens.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Internal/Lens.o )
+[ 7 of 25] Compiling Data.Generics.Internal.Void ( src/Data/Generics/Internal/Void.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Internal/Void.o )
+[ 8 of 25] Compiling Data.Generics.Product.Internal.Fields ( src/Data/Generics/Product/Internal/Fields.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Product/Internal/Fields.o )
+[ 9 of 25] Compiling Data.Generics.Product.Fields ( src/Data/Generics/Product/Fields.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Product/Fields.o )
+[10 of 25] Compiling Data.Generics.Product.Internal.Positions ( src/Data/Generics/Product/Internal/Positions.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Product/Internal/Positions.o )
+[11 of 25] Compiling Data.Generics.Product.Internal.Subtype ( src/Data/Generics/Product/Internal/Subtype.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Product/Internal/Subtype.o )
+[12 of 25] Compiling Data.Generics.Product.Internal.Typed ( src/Data/Generics/Product/Internal/Typed.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Product/Internal/Typed.o )
+[13 of 25] Compiling Data.Generics.Product.Positions ( src/Data/Generics/Product/Positions.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Product/Positions.o )
+[14 of 25] Compiling Data.Generics.Product.Subtype ( src/Data/Generics/Product/Subtype.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Product/Subtype.o )
+[15 of 25] Compiling Data.Generics.Product.Typed ( src/Data/Generics/Product/Typed.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Product/Typed.o )
+[16 of 25] Compiling Data.Generics.Product.Any ( src/Data/Generics/Product/Any.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Product/Any.o )
+[17 of 25] Compiling Data.Generics.Product ( src/Data/Generics/Product.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Product.o )
+[18 of 25] Compiling Data.Generics.Sum.Internal.Constructors ( src/Data/Generics/Sum/Internal/Constructors.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Sum/Internal/Constructors.o )
+[19 of 25] Compiling Data.Generics.Sum.Constructors ( src/Data/Generics/Sum/Constructors.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Sum/Constructors.o )
+[20 of 25] Compiling Data.Generics.Sum.Internal.Typed ( src/Data/Generics/Sum/Internal/Typed.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Sum/Internal/Typed.o )
+[21 of 25] Compiling Data.Generics.Sum.Internal.Subtype ( src/Data/Generics/Sum/Internal/Subtype.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Sum/Internal/Subtype.o )
+[22 of 25] Compiling Data.Generics.Sum.Subtype ( src/Data/Generics/Sum/Subtype.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Sum/Subtype.o )
+[23 of 25] Compiling Data.Generics.Sum.Typed ( src/Data/Generics/Sum/Typed.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Sum/Typed.o )
+[24 of 25] Compiling Data.Generics.Sum.Any ( src/Data/Generics/Sum/Any.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Sum/Any.o )
+[25 of 25] Compiling Data.Generics.Sum ( src/Data/Generics/Sum.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Generics/Sum.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in /root/.stack/snapshots/x86_64-linux-nix/lts-11.15/8.2.2/lib/x86_64-linux-ghc-8.2.2/generic-lens-0.5.1.0-CoSsAcQ1aSs48WPvwj5lmQ
+Registering library for generic-lens-0.5.1.0..

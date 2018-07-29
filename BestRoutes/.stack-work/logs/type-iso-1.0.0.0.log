@@ -1,0 +1,8 @@
+Configuring type-iso-1.0.0.0...
+Preprocessing library for type-iso-1.0.0.0..
+Building library for type-iso-1.0.0.0..
+[1 of 2] Compiling Data.Types.Injective ( Data/Types/Injective.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Types/Injective.o )
+[2 of 2] Compiling Data.Types.Isomorphic ( Data/Types/Isomorphic.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Data/Types/Isomorphic.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in /root/haskell/test/BestRoutes/.stack-work/install/x86_64-linux-nix/lts-11.15/8.2.2/lib/x86_64-linux-ghc-8.2.2/type-iso-1.0.0.0-5XqAx5oZnS0GLgTW9p1nOf
+Registering library for type-iso-1.0.0.0..

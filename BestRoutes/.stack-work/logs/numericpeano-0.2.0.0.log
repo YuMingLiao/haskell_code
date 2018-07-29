@@ -1,0 +1,7 @@
+Configuring numericpeano-0.2.0.0...
+Preprocessing library for numericpeano-0.2.0.0..
+Building library for numericpeano-0.2.0.0..
+[1 of 1] Compiling Numeric.Peano    ( Numeric/Peano.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Numeric/Peano.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in /root/haskell/test/BestRoutes/.stack-work/install/x86_64-linux-nix/lts-11.15/8.2.2/lib/x86_64-linux-ghc-8.2.2/numericpeano-0.2.0.0-Cdc0Cb4rvHd1WRlbkmGUlQ
+Registering library for numericpeano-0.2.0.0..

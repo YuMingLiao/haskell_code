@@ -1,0 +1,13 @@
+Configuring storable-record-0.0.4...
+Preprocessing library for storable-record-0.0.4..
+Building library for storable-record-0.0.4..
+[1 of 7] Compiling Foreign.Storable.FixedArray ( src/Foreign/Storable/FixedArray.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Foreign/Storable/FixedArray.o )
+[2 of 7] Compiling Foreign.Storable.Newtype ( src/Foreign/Storable/Newtype.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Foreign/Storable/Newtype.o )
+[3 of 7] Compiling Foreign.Storable.Record ( src/Foreign/Storable/Record.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Foreign/Storable/Record.o )
+[4 of 7] Compiling Foreign.Storable.RecordMinimalSize ( src/Foreign/Storable/RecordMinimalSize.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Foreign/Storable/RecordMinimalSize.o )
+[5 of 7] Compiling Foreign.Storable.RecordReaderPtr ( src/Foreign/Storable/RecordReaderPtr.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Foreign/Storable/RecordReaderPtr.o )
+[6 of 7] Compiling Foreign.Storable.Traversable ( src/Foreign/Storable/Traversable.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Foreign/Storable/Traversable.o )
+[7 of 7] Compiling Foreign.Storable.TraversableUnequalSizes ( src/Foreign/Storable/TraversableUnequalSizes.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Foreign/Storable/TraversableUnequalSizes.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in /root/haskell/test/BestRoutes/.stack-work/install/x86_64-linux-nix/lts-11.15/8.2.2/lib/x86_64-linux-ghc-8.2.2/storable-record-0.0.4-KxTnhEq6Hwt9oeucTDON9u
+Registering library for storable-record-0.0.4..

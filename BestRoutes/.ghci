@@ -1,0 +1,13 @@
+:set -XOverloadedStrings
+:set -XFlexibleInstances
+:set -XDeriveAnyClass
+:set -XTypeSynonymInstances
+:set -XMultiParamTypeClasses 
+:set -XAllowAmbiguousTypes       
+:set -XDataKinds                 
+:set -XDeriveGeneric             
+:set -XDuplicateRecordFields     
+:set -XFlexibleContexts          
+:set -XNoMonomorphismRestriction 
+:set -XTypeApplications          
+

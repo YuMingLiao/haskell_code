@@ -187,6 +187,39 @@
   (major1) == 0 && (major2) == 4 && (minor) <= 0)
 #endif /* MIN_VERSION_reflex_dom */
 
+/* package servant-reflex-0.3.3 */
+#ifndef VERSION_servant_reflex
+#define VERSION_servant_reflex "0.3.3"
+#endif /* VERSION_servant_reflex */
+#ifndef MIN_VERSION_servant_reflex
+#define MIN_VERSION_servant_reflex(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  3 || \
+  (major1) == 0 && (major2) == 3 && (minor) <= 3)
+#endif /* MIN_VERSION_servant_reflex */
+
+/* package servant-0.11 */
+#ifndef VERSION_servant
+#define VERSION_servant "0.11"
+#endif /* VERSION_servant */
+#ifndef MIN_VERSION_servant
+#define MIN_VERSION_servant(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  11 || \
+  (major1) == 0 && (major2) == 11 && (minor) <= 0)
+#endif /* MIN_VERSION_servant */
+
+/* package servant-client-0.11 */
+#ifndef VERSION_servant_client
+#define VERSION_servant_client "0.11"
+#endif /* VERSION_servant_client */
+#ifndef MIN_VERSION_servant_client
+#define MIN_VERSION_servant_client(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  11 || \
+  (major1) == 0 && (major2) == 11 && (minor) <= 0)
+#endif /* MIN_VERSION_servant_client */
+
 /* tool gcc-7.3.0 */
 #ifndef TOOL_VERSION_gcc
 #define TOOL_VERSION_gcc "7.3.0"

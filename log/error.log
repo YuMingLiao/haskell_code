@@ -1,0 +1,5 @@
+[29/Jul/2018:07:35:55 +0800] During processing of request from ::1:59238
+request:
+"GET /getlist HTTP/1.1\naccept-language: en-US,en;q=0.9\naccept-encoding: gzip, deflate, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36\nupgrade-insecure-requests: 1\nconnection: keep-alive\nhost: localhost:8001\n\nsn=\"localhost:8001\" c=::1:59238 s=::1:8001 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+../data/people.csv: openBinaryFile: does not exist (No such file or directory)

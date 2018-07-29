@@ -1,0 +1,7 @@
+Configuring lens-tutorial-1.0.3...
+Preprocessing library for lens-tutorial-1.0.3..
+Building library for lens-tutorial-1.0.3..
+[1 of 1] Compiling Control.Lens.Tutorial ( src/Control/Lens/Tutorial.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Control/Lens/Tutorial.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in /root/haskell/test/BestRoutes/.stack-work/install/x86_64-linux-nix/lts-11.15/8.2.2/lib/x86_64-linux-ghc-8.2.2/lens-tutorial-1.0.3-Ld4SX9N5SPS94yeQpl5tcv
+Registering library for lens-tutorial-1.0.3..

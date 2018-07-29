@@ -165,6 +165,17 @@
   (major1) == 0 && (major2) == 4 && (minor) <= 0)
 #endif /* MIN_VERSION_reflex_dom */
 
+/* package aeson-1.2.2.0 */
+#ifndef VERSION_aeson
+#define VERSION_aeson "1.2.2.0"
+#endif /* VERSION_aeson */
+#ifndef MIN_VERSION_aeson
+#define MIN_VERSION_aeson(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  2 || \
+  (major1) == 1 && (major2) == 2 && (minor) <= 2)
+#endif /* MIN_VERSION_aeson */
+
 /* tool cpphs-1.20.8 */
 #ifndef TOOL_VERSION_cpphs
 #define TOOL_VERSION_cpphs "1.20.8"

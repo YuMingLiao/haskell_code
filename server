@@ -1,0 +1,3 @@
+# My first script
+/home/demo/test/myproject/dist-newstyle/build/x86_64-linux/ghc-8.0.2/backend-0.1.0.0/c/backend/build/backend/backend -b localhost -p 8001
+

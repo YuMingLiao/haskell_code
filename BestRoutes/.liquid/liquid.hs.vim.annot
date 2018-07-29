@@ -1,0 +1,3 @@
+1:1-1:1::Main.$trModule :: "GHC.Types.Module"
+3:1-3:3::Main.i2 :: "{i : GHC.Types.Int | i >= 3}"
+7:1-7:3::Main.i3 :: "{i : GHC.Types.Int | i >= 3}"

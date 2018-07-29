@@ -1,0 +1,50 @@
+Configuring combinat-0.2.8.2...
+Preprocessing library for combinat-0.2.8.2..
+Building library for combinat-0.2.8.2..
+[ 1 of 37] Compiling Math.Combinat.Classes ( Math/Combinat/Classes.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Classes.o )
+[ 2 of 37] Compiling Math.Combinat.Helper ( Math/Combinat/Helper.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Helper.o )
+[ 3 of 37] Compiling Math.Combinat.ASCII ( Math/Combinat/ASCII.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/ASCII.o )
+[ 4 of 37] Compiling Math.Combinat.Numbers.Primes ( Math/Combinat/Numbers/Primes.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Numbers/Primes.o )
+[ 5 of 37] Compiling Math.Combinat.Partitions.Vector ( Math/Combinat/Partitions/Vector.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Partitions/Vector.o )
+[ 6 of 37] Compiling Math.Combinat.Partitions.Multiset ( Math/Combinat/Partitions/Multiset.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Partitions/Multiset.o )
+[ 7 of 37] Compiling Math.Combinat.Sign ( Math/Combinat/Sign.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Sign.o )
+[ 8 of 37] Compiling Math.Combinat.Numbers ( Math/Combinat/Numbers.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Numbers.o )
+[ 9 of 37] Compiling Math.Combinat.Sets ( Math/Combinat/Sets.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Sets.o )
+[10 of 37] Compiling Math.Combinat.Permutations ( Math/Combinat/Permutations.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Permutations.o )
+[11 of 37] Compiling Math.Combinat.Partitions.Integer ( Math/Combinat/Partitions/Integer.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Partitions/Integer.o )
+[12 of 37] Compiling Math.Combinat.Partitions.Skew ( Math/Combinat/Partitions/Skew.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Partitions/Skew.o )
+[13 of 37] Compiling Math.Combinat.Partitions.Set ( Math/Combinat/Partitions/Set.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Partitions/Set.o )
+[14 of 37] Compiling Math.Combinat.Partitions ( Math/Combinat/Partitions.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Partitions.o )
+[15 of 37] Compiling Math.Combinat.Numbers.Series ( Math/Combinat/Numbers/Series.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Numbers/Series.o )
+[16 of 37] Compiling Math.Combinat.Compositions ( Math/Combinat/Compositions.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Compositions.o )
+[17 of 37] Compiling Math.Combinat.Groups.Free ( Math/Combinat/Groups/Free.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Groups/Free.o )
+[18 of 37] Compiling Math.Combinat.Tableaux ( Math/Combinat/Tableaux.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Tableaux.o )
+[19 of 37] Compiling Math.Combinat.Partitions.Plane ( Math/Combinat/Partitions/Plane.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Partitions/Plane.o )
+[20 of 37] Compiling Math.Combinat.Tableaux.GelfandTsetlin ( Math/Combinat/Tableaux/GelfandTsetlin.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Tableaux/GelfandTsetlin.o )
+[21 of 37] Compiling Math.Combinat.Tableaux.GelfandTsetlin.Cone ( Math/Combinat/Tableaux/GelfandTsetlin/Cone.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Tableaux/GelfandTsetlin/Cone.o )
+[22 of 37] Compiling Math.Combinat.Tableaux.Skew ( Math/Combinat/Tableaux/Skew.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Tableaux/Skew.o )
+[23 of 37] Compiling Math.Combinat.Tableaux.LittlewoodRichardson ( Math/Combinat/Tableaux/LittlewoodRichardson.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Tableaux/LittlewoodRichardson.o )
+[24 of 37] Compiling Math.Combinat.Trees.Binary[boot] ( Math/Combinat/Trees/Binary.hs-boot, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Trees/Binary.o-boot )
+[25 of 37] Compiling Math.Combinat.Trees.Nary[boot] ( Math/Combinat/Trees/Nary.hs-boot, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Trees/Nary.o-boot )
+[26 of 37] Compiling Math.Combinat.Trees.Graphviz ( Math/Combinat/Trees/Graphviz.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Trees/Graphviz.o )
+[27 of 37] Compiling Math.Combinat.Trees.Binary ( Math/Combinat/Trees/Binary.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Trees/Binary.o )
+
+[;1mMath/Combinat/Trees/Binary.hs:361:3: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Woverlapping-patterns[0m[0m[;1m][0m[0m[;1m
+    Pattern match is redundant
+    In an equation for `findj': findj _ _ = ...[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m361 |[0m[0m   [;1m[35mfindj _ _ = error "fasc4A_algorithm_P: fatal error shouldn't happen"[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[28 of 37] Compiling Math.Combinat.LatticePaths ( Math/Combinat/LatticePaths.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/LatticePaths.o )
+[29 of 37] Compiling Math.Combinat.Partitions.NonCrossing ( Math/Combinat/Partitions/NonCrossing.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Partitions/NonCrossing.o )
+[30 of 37] Compiling Math.Combinat.Groups.Thompson.F ( Math/Combinat/Groups/Thompson/F.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Groups/Thompson/F.o )
+[31 of 37] Compiling Math.Combinat.Trees.Nary ( Math/Combinat/Trees/Nary.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Trees/Nary.o )
+[32 of 37] Compiling Math.Combinat.Trees ( Math/Combinat/Trees.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Trees.o )
+[33 of 37] Compiling Math.Combinat.Tuples ( Math/Combinat/Tuples.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Tuples.o )
+[34 of 37] Compiling Math.Combinat    ( Math/Combinat.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat.o )
+[35 of 37] Compiling Math.Combinat.TypeLevel ( Math/Combinat/TypeLevel.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/TypeLevel.o )
+[36 of 37] Compiling Math.Combinat.Groups.Braid ( Math/Combinat/Groups/Braid.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Groups/Braid.o )
+[37 of 37] Compiling Math.Combinat.Groups.Braid.NF ( Math/Combinat/Groups/Braid/NF.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Math/Combinat/Groups/Braid/NF.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in /root/haskell/test/BestRoutes/.stack-work/install/x86_64-linux-nix/lts-11.15/8.2.2/lib/x86_64-linux-ghc-8.2.2/combinat-0.2.8.2-I62YxgQUMsfLwAwiaA7K36
+Registering library for combinat-0.2.8.2..

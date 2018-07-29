@@ -22,7 +22,18 @@ import Data.Tuple.Extra (both)
 import Data.Vector (Vector,(!))
 import Control.Monad (mzero)
 import qualified Data.ByteString.Char8 as B
+import Data.Aeson
 data Num = Int
+type From = Loc
+type Seats = Int
+
+type Loc = Int
+type Origin = Loc
+type Destination = Loc
+type Stops = [Loc]
+data Route = Route Origin Stops Destination deriving Show
+type Path = [(Loc,Loc)]
+
 
 data District = District {
    _name :: !Text
@@ -78,6 +89,7 @@ instance ToRecord Location where
 instance ToField (Double,Double) where
     toField (a,b) = B.pack $ show (a,b) 
 -}
+
 type Persons = [Person]
 
 data Car = Car {
@@ -87,11 +99,6 @@ data Car = Car {
   , route :: Route
 } deriving (Show)
 type Cars = [Car]
-
-data Person = Person {
-    _name :: !Text
- ,  _location :: !Int
- } deriving (Show, Generic,FromRecord,ToRecord)
 
 type People = Int
 data PickupPoint = PP Loc People deriving Show
@@ -108,16 +115,6 @@ instance Injective Queue [PickupPoint] where
 
 showPickupPoint :: PickupPoint -> String
 showPickupPoint (PP l ppl) = "go to " ++ show l ++ " and pickup " ++ show ppl ++ " people\n"
-
-type From = Loc
-type Seats = Int
-
-type Loc = Int
-type Origin = Loc
-type Destination = Loc
-type Stops = [Loc]
-data Route = Route Origin Stops Destination deriving Show
-type Path = [(Loc,Loc)]
 
 routeToList :: Route -> [Int]
 routeToList (Route o ss d) = [o]++ss++[d]
@@ -141,4 +138,11 @@ distance (a,b) (c,d) = sqrt ((abs (a-c))^2 + (abs(b-d))^2)
 countMatrix :: Vector District -> (Int, Int) -> Double
 countMatrix ds (x,y) = let
   in uncurry distance $ both (lat &&& lng) ((ds!(x-1)), (ds!(y-1)))
+
+data Person = Person {
+    _name :: !Text
+ ,  _location :: !Int
+ } deriving (Show, Generic,FromRecord,ToRecord,FromJSON,ToJSON)
+makeFieldsNoPrefix ''Person
+
 

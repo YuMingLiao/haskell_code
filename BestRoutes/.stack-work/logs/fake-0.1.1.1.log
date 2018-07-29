@@ -1,0 +1,28 @@
+Configuring fake-0.1.1.1...
+Preprocessing library for fake-0.1.1.1..
+Building library for fake-0.1.1.1..
+[ 1 of 15] Compiling Fake.Types       ( src/Fake/Types.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Fake/Types.o )
+[ 2 of 15] Compiling Fake.Provider.Lang ( src/Fake/Provider/Lang.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Fake/Provider/Lang.o )
+[ 3 of 15] Compiling Fake.Cover       ( src/Fake/Cover.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Fake/Cover.o )
+[ 4 of 15] Compiling Fake.Combinators ( src/Fake/Combinators.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Fake/Combinators.o )
+[ 5 of 15] Compiling Fake.Provider.Person.EN_US ( src/Fake/Provider/Person/EN_US.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Fake/Provider/Person/EN_US.o )
+
+[;1msrc/Fake/Provider/Person/EN_US.hs:2208:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wmissing-signatures[0m[0m[;1m][0m[0m[;1m
+    Top-level binding with no type signature:
+      lastNameList :: [(Int, Text)][0m[0m
+[;1m[34m     |[0m[0m
+[;1m[34m2208 |[0m[0m [;1m[35mlastNameList[0m[0m = lastNameList00
+[;1m[34m     |[0m[0m[;1m[35m ^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[ 6 of 15] Compiling Fake.Provider.Locale ( src/Fake/Provider/Locale.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Fake/Provider/Locale.o )
+[ 7 of 15] Compiling Fake.Provider.Lang.EN_US ( src/Fake/Provider/Lang/EN_US.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Fake/Provider/Lang/EN_US.o )
+[ 8 of 15] Compiling Fake.Provider.DateTime ( src/Fake/Provider/DateTime.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Fake/Provider/DateTime.o )
+[ 9 of 15] Compiling Fake.Provider.UserAgent ( src/Fake/Provider/UserAgent.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Fake/Provider/UserAgent.o )
+[10 of 15] Compiling Fake.Class       ( src/Fake/Class.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Fake/Class.o )
+[11 of 15] Compiling Fake.Utils       ( src/Fake/Utils.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Fake/Utils.o )
+[12 of 15] Compiling Fake.Provider.PhoneNumber.EN_US ( src/Fake/Provider/PhoneNumber/EN_US.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Fake/Provider/PhoneNumber/EN_US.o )
+[13 of 15] Compiling Fake             ( src/Fake.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Fake.o )
+[14 of 15] Compiling Fake.Provider.IdNumber.EN_US ( src/Fake/Provider/IdNumber/EN_US.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Fake/Provider/IdNumber/EN_US.o )
+[15 of 15] Compiling Fake.Provider.Address.EN_US ( src/Fake/Provider/Address/EN_US.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/Fake/Provider/Address/EN_US.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in /root/haskell/test/BestRoutes/.stack-work/install/x86_64-linux-nix/lts-11.15/8.2.2/lib/x86_64-linux-ghc-8.2.2/fake-0.1.1.1-Ebl48Fqj6PN1KcZ2nwlzRU
+Registering library for fake-0.1.1.1..

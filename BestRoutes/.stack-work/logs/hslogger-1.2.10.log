@@ -1,0 +1,77 @@
+Configuring hslogger-1.2.10...
+Preprocessing library for hslogger-1.2.10..
+Building library for hslogger-1.2.10..
+[1 of 8] Compiling System.Log       ( src/System/Log.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/System/Log.o )
+[2 of 8] Compiling System.Log.Formatter ( src/System/Log/Formatter.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/System/Log/Formatter.o )
+[3 of 8] Compiling System.Log.Handler ( src/System/Log/Handler.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/System/Log/Handler.o )
+[4 of 8] Compiling System.Log.Handler.Growl ( src/System/Log/Handler/Growl.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/System/Log/Handler/Growl.o )
+
+[;1msrc/System/Log/Handler/Growl.hs:47:59: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `sClose' (imported from Network.Socket):
+    Deprecated: "use 'close'"[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m47 |[0m[0m                in  mapM_ (sendNote s pkt) (targets gh) >> [;1m[35msClose[0m[0m s
+[;1m[34m   |[0m[0m[;1m[35m                                                           ^^^^^^[0m[0m
+[0m[0m[0m
+[;1msrc/System/Log/Handler/Growl.hs:50:21: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `sendTo' (imported from Network.Socket):
+    "Use sendTo defined in "Network.Socket.ByteString""[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m50 |[0m[0m sendNote s pkt ha = [;1m[35msendTo[0m[0m s pkt (SockAddrInet 9887 ha)
+[;1m[34m   |[0m[0m[;1m[35m                     ^^^^^^[0m[0m
+[0m[0m[0m
+[;1msrc/System/Log/Handler/Growl.hs:109:32: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `sendTo' (imported from Network.Socket):
+    "Use sendTo defined in "Network.Socket.ByteString""[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m109 |[0m[0m                        in do { [;1m[35msendTo[0m[0m (skt gh) (buildRegistration gh) sa
+[;1m[34m    |[0m[0m[;1m[35m                                ^^^^^^[0m[0m
+[0m[0m[0m[5 of 8] Compiling System.Log.Handler.Simple ( src/System/Log/Handler/Simple.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/System/Log/Handler/Simple.o )
+[6 of 8] Compiling System.Log.Handler.Log4jXML ( src/System/Log/Handler/Log4jXML.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/System/Log/Handler/Log4jXML.o )
+[7 of 8] Compiling System.Log.Handler.Syslog ( src/System/Log/Handler/Syslog.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/System/Log/Handler/Syslog.o )
+
+[;1msrc/System/Log/Handler/Syslog.hs:198:16: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `sClose' (imported from Network.Socket):
+    Deprecated: "use 'close'"[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m198 |[0m[0m             do [;1m[35mS.sClose[0m[0m s -- close Stream variant
+[;1m[34m    |[0m[0m[;1m[35m                ^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1msrc/System/Log/Handler/Syslog.hs:260:33: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `sendTo' (imported from Network.Socket):
+    "Use sendTo defined in "Network.Socket.ByteString""[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m260 |[0m[0m                     Datagram -> [;1m[35msendTo[0m[0m (logsocket sh) omsg (address sh)
+[;1m[34m    |[0m[0m[;1m[35m                                 ^^^^^^[0m[0m
+[0m[0m[0m
+[;1msrc/System/Log/Handler/Syslog.hs:261:33: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `send' (imported from Network.Socket):
+    "Use send defined in "Network.Socket.ByteString""[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m261 |[0m[0m                     Stream   -> [;1m[35msend[0m[0m   (logsocket sh) omsg
+[;1m[34m    |[0m[0m[;1m[35m                                 ^^^^[0m[0m
+[0m[0m[0m
+[;1msrc/System/Log/Handler/Syslog.hs:278:16: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `sClose' (imported from Network.Socket):
+    Deprecated: "use 'close'"[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m278 |[0m[0m     close sh = [;1m[35msClose[0m[0m (logsocket sh)
+[;1m[34m    |[0m[0m[;1m[35m                ^^^^^^[0m[0m
+[0m[0m[0m[8 of 8] Compiling System.Log.Logger ( src/System/Log/Logger.hs, .stack-work/dist/x86_64-linux-nix/Cabal-2.0.1.0/build/System/Log/Logger.o )
+
+[;1msrc/System/Log/Logger.hs:201:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    Module `Control.Monad.Error' is deprecated:
+      Use "Control.Monad.Except" instead[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m201 |[0m[0m [;1m[35mimport Control.Monad.Error[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1msrc/System/Log/Logger.hs:479:27: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `fold' (imported from Data.Map):
+    Deprecated: "As of version 0.5, replaced by 'foldr'."[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m479 |[0m[0m         let allHandlers = [;1m[35mMap.fold[0m[0m (\l r -> concat [r, handlers l]) [] lt
+[;1m[34m    |[0m[0m[;1m[35m                           ^^^^^^^^[0m[0m
+[0m[0m[0mignoring (possibly broken) abi-depends field for packages
+Installing library in /root/.stack/snapshots/x86_64-linux-nix/lts-11.15/8.2.2/lib/x86_64-linux-ghc-8.2.2/hslogger-1.2.10-2L5lzaGQVDs7v1WV2VvKOk
+Registering library for hslogger-1.2.10..
