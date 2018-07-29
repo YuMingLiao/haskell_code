@@ -29,11 +29,14 @@ import CSVParser
 server :: Server API '[BasicAuthCheck (Handler App App) ()] (Handler App App)
 server = return 99
     :<|> list 
+    :<|> listDistricts
     :<|> serveDirectory "static"
   where
     list = do
       ppl <- liftIO $ getPeople "./data/people.csv"
       return ppl
+    listDistricts = do
+      return =<< liftIO $ getDistricts "./data/district.csv"
 
 -- Turn the server into a WAI app. 'serve' is provided by servant,
 -- more precisely by the Servant.Server module.

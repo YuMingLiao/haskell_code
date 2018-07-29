@@ -23,6 +23,8 @@ import Data.Vector (Vector,(!))
 import Control.Monad (mzero)
 import qualified Data.ByteString.Char8 as B
 import Data.Aeson
+--import GoogleMapsReflex.JSTypes.LatLng
+
 data Num = Int
 type From = Loc
 type Seats = Int
@@ -37,10 +39,10 @@ type Path = [(Loc,Loc)]
 
 data District = District {
    _name :: !Text
- , code :: !Text
- , lat  :: !Double
- , lng  :: !Double
- } deriving (Show, Generic, FromRecord, ToRecord)
+ , _code :: !Text
+ , _lat  :: !Double
+ , _lng  :: !Double
+ } deriving (Show, Generic, FromRecord, ToRecord, FromJSON, ToJSON)
 
 data Location = Loc {
    _goal :: !Text
@@ -125,6 +127,18 @@ routeToPath r = uncurry zip $ (init &&& tail) $ routeToList r
 getDistance :: Matrix Double -> Path -> Double
 getDistance m p = sum $ map (\(x,y) -> getElem (x+1) (y+1) m) p
  
+data Person = Person {
+    _name :: !Text
+ ,  _location :: !Int
+ } deriving (Show, Generic,FromRecord,ToRecord,FromJSON,ToJSON)
+makeFieldsNoPrefix ''Person
+makeFieldsNoPrefix ''District
+
+
+countMatrix :: Vector District -> (Int, Int) -> Double
+countMatrix ds (x,y) = let
+  in uncurry distance $ both ((^.lat) &&& (^.lng)) ((ds!(x-1)), (ds!(y-1)))
+
 mkDistanceMatrix districts = let l = length districts in matrix l l (countMatrix districts) 
 
 defaultDistanceMatrix = matrix 10 10 (countDefaultMatrix)
@@ -135,14 +149,5 @@ countDefaultMatrix (x,y) = distance (fromIntegral x,fromIntegral x) (fromIntegra
 distance :: (Double,Double) -> (Double,Double) -> Double
 distance (a,b) (c,d) = sqrt ((abs (a-c))^2 + (abs(b-d))^2)
 
-countMatrix :: Vector District -> (Int, Int) -> Double
-countMatrix ds (x,y) = let
-  in uncurry distance $ both (lat &&& lng) ((ds!(x-1)), (ds!(y-1)))
-
-data Person = Person {
-    _name :: !Text
- ,  _location :: !Int
- } deriving (Show, Generic,FromRecord,ToRecord,FromJSON,ToJSON)
-makeFieldsNoPrefix ''Person
 
 

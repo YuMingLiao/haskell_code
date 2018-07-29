@@ -26,7 +26,7 @@ main = mainWidget $ do
 
 demo :: forall t m. MonadWidget t m => m ()
 demo = do
-  let (getint :<|> getplist :<|> _) = 
+  let (getint :<|> getplist :<|> getdistricts :<|> _) = 
                                client (Proxy :: Proxy API)
                                (Proxy :: Proxy m)
                                (Proxy :: Proxy ())
@@ -42,16 +42,42 @@ demo = do
     pListDyn <- holdDyn [] serverPList
 
     el "table" $ do
-    --   el "tr" $ el "td" $ dynText (T.pack.show <$> pListDyn)
-      simpleList pListDyn displayPersonRow          -- render all station records
+      el "tr" $ do
+        el "td" $ text "name"
+        el "td" $ text "location"
+      simpleList pListDyn displayPersonRow
+
+  elClass "div" "districts-demo" $ do
+    btn <- button "Get Districts"
+    serverDList <- fmapMaybe reqSuccess <$> getdistricts btn 
+    dListDyn <- holdDyn [] serverDList
+
+    el "table" $ do
+      el "tr" $ do
+        el "td" $ text "name"
+        el "td" $ text "code"
+        el "td" $ text "lag"
+        el "td" $ text "lng"
+      simpleList dListDyn displayDistrictRow
+
+
 
     return ()
 
--- | Create the HTML element for a single HTML table row
 displayPersonRow :: MonadWidget t m => Dynamic t Person -> m ()--(Event t T.Text)
-displayPersonRow dynPer =  el "tr" $ do
-  el "td" $ dynText $ (^.name) <$> dynPer
-  el "td" $ display $ (^.location) <$> dynPer
+displayPersonRow dynPer = do 
+  el "tr" $ do
+    el "td" $ dynText $ (^.name) <$> dynPer
+    el "td" $ display $ (^.location) <$> dynPer
+
+displayDistrictRow :: MonadWidget t m => Dynamic t District -> m ()--(Event t T.Text)
+displayDistrictRow dynDis = do 
+  el "tr" $ do
+    el "td" $ dynText $ (^.name) <$> dynDis
+    el "td" $ dynText $ (^.code) <$> dynDis
+    el "td" $ display $ (^.lat) <$> dynDis
+    el "td" $ display $ (^.lng) <$> dynDis
+
 
 
 

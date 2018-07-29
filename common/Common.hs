@@ -16,6 +16,7 @@ import Types
 
 type API = "getint"  :> Get '[JSON] Int
       :<|> "getlist" :> Get '[JSON] [Person]
+      :<|> "getdistricts" :> Get '[JSON] [District]
       :<|> Raw
 
 

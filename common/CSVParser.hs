@@ -13,4 +13,7 @@ getPeople filename = do
   txt <- BS.readFile filename
   return $ V.toList $ either error (id) $ (decode NoHeader txt :: Either String (V.Vector Person)) 
 
-
+getDistricts :: String -> IO [District]
+getDistricts filename = do
+  txt <- BS.readFile filename
+  return $ V.toList $ either error (id) $ (decode NoHeader txt :: Either String (V.Vector District)) 
