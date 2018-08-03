@@ -5,3 +5,4 @@ packages:
   frontend/
   google-maps-reflex/
   servant-reflex/
+  GoogleDirections/

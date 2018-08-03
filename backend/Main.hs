@@ -30,6 +30,7 @@ server :: Server API '[BasicAuthCheck (Handler App App) ()] (Handler App App)
 server = return 99
     :<|> list 
     :<|> listDistricts
+    :<|> listLocations
     :<|> serveDirectory "static"
   where
     list = do
@@ -37,6 +38,8 @@ server = return 99
       return ppl
     listDistricts = do
       return =<< liftIO $ getDistricts "./data/district.csv"
+    listLocations = do
+      return =<< liftIO $ getLocations "./data/locations_gps.csv"
 
 -- Turn the server into a WAI app. 'serve' is provided by servant,
 -- more precisely by the Servant.Server module.
@@ -46,11 +49,13 @@ test = serveSnapWithContext api
 
 initApp :: SnapletInit App App
 initApp = makeSnaplet "myapp" "example" Nothing $ do
-  wrapSite $ applyCORS defaultOptions
+  wrapSite $ applyCORS defaultOptions site
+  return App
+
+site = 
   addRoutes [("", test)
             ,("", serveDirectory "static")
             ]
-  return App
 
 main :: IO ()
 main = serveSnaplet mempty initApp

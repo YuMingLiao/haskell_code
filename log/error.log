@@ -3,3 +3,129 @@ request:
 "GET /getlist HTTP/1.1\naccept-language: en-US,en;q=0.9\naccept-encoding: gzip, deflate, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36\nupgrade-insecure-requests: 1\nconnection: keep-alive\nhost: localhost:8001\n\nsn=\"localhost:8001\" c=::1:59238 s=::1:8001 ctx=/ clen=n/a"
 A web handler threw an exception. Details:
 ../data/people.csv: openBinaryFile: does not exist (No such file or directory)
+[30/Jul/2018:09:12:04 +0800] Exception leaked to httpSession during phase 'sending-response': 
+During processing of request from ::1:53342
+request:
+"GET /getlocations HTTP/1.1\naccept-language: en-US,en;q=0.9\naccept-encoding: gzip, deflate, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36\nupgrade-insecure-requests: 1\nconnection: keep-alive\nhost: localhost:8001\n\nsn=\"localhost:8001\" c=::1:53342 s=::1:8001 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+parse error (Failed reading: conversion error: cannot unpack array of length 5 into a 5-tuple. Input record: ["\228\188\145\230\129\175","0","\231\159\179\231\162\135\230\156\141\229\139\153\229\141\128","\231\159\179\231\162\135\229\141\128\230\150\135\229\177\177\232\183\175\228\184\128\230\174\181\&6\232\153\159","(25.0077814,121.6323265)"]) at 
+å°é»,1,æ·éå°é»å¤§æ¨ç«1èåºå£,èºåå¸ä¸­æ­£åç¾æ¯ç¦è·¯3æ®µ126ä¹5è,"(25.0205742 (truncated)
+CallStack (from HasCallStack):
+  error, called at CSVParser.hs:24:30 in common-0.1.0.0-inplace:CSVParser
+[30/Jul/2018:09:12:04 +0800] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from ::1:53342
+request:
+"GET /getlocations HTTP/1.1\naccept-language: en-US,en;q=0.9\naccept-encoding: gzip, deflate, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36\nupgrade-insecure-requests: 1\nconnection: keep-alive\nhost: localhost:8001\n\nsn=\"localhost:8001\" c=::1:53342 s=::1:8001 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TerminateSessionException parse error (Failed reading: conversion error: cannot unpack array of length 5 into a 5-tuple. Input record: ["\228\188\145\230\129\175","0","\231\159\179\231\162\135\230\156\141\229\139\153\229\141\128","\231\159\179\231\162\135\229\141\128\230\150\135\229\177\177\232\183\175\228\184\128\230\174\181\&6\232\153\159","(25.0077814,121.6323265)"]) at 
+å°é»,1,æ·éå°é»å¤§æ¨ç«1èåºå£,èºåå¸ä¸­æ­£åç¾æ¯ç¦è·¯3æ®µ126ä¹5è,"(25.0205742 (truncated)
+CallStack (from HasCallStack):
+  error, called at CSVParser.hs:24:30 in common-0.1.0.0-inplace:CSVParser
+[30/Jul/2018:09:12:04 +0800] Exception leaked to httpSession during phase 'sending-response': 
+During processing of request from ::1:53350
+request:
+"GET /getlocations HTTP/1.1\naccept-language: en-US,en;q=0.9\naccept-encoding: gzip, deflate, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36\nupgrade-insecure-requests: 1\nconnection: keep-alive\nhost: localhost:8001\n\nsn=\"localhost:8001\" c=::1:53350 s=::1:8001 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+parse error (Failed reading: conversion error: cannot unpack array of length 5 into a 5-tuple. Input record: ["\228\188\145\230\129\175","0","\231\159\179\231\162\135\230\156\141\229\139\153\229\141\128","\231\159\179\231\162\135\229\141\128\230\150\135\229\177\177\232\183\175\228\184\128\230\174\181\&6\232\153\159","(25.0077814,121.6323265)"]) at 
+å°é»,1,æ·éå°é»å¤§æ¨ç«1èåºå£,èºåå¸ä¸­æ­£åç¾æ¯ç¦è·¯3æ®µ126ä¹5è,"(25.0205742 (truncated)
+CallStack (from HasCallStack):
+  error, called at CSVParser.hs:24:30 in common-0.1.0.0-inplace:CSVParser
+[30/Jul/2018:09:12:04 +0800] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from ::1:53350
+request:
+"GET /getlocations HTTP/1.1\naccept-language: en-US,en;q=0.9\naccept-encoding: gzip, deflate, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36\nupgrade-insecure-requests: 1\nconnection: keep-alive\nhost: localhost:8001\n\nsn=\"localhost:8001\" c=::1:53350 s=::1:8001 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TerminateSessionException parse error (Failed reading: conversion error: cannot unpack array of length 5 into a 5-tuple. Input record: ["\228\188\145\230\129\175","0","\231\159\179\231\162\135\230\156\141\229\139\153\229\141\128","\231\159\179\231\162\135\229\141\128\230\150\135\229\177\177\232\183\175\228\184\128\230\174\181\&6\232\153\159","(25.0077814,121.6323265)"]) at 
+å°é»,1,æ·éå°é»å¤§æ¨ç«1èåºå£,èºåå¸ä¸­æ­£åç¾æ¯ç¦è·¯3æ®µ126ä¹5è,"(25.0205742 (truncated)
+CallStack (from HasCallStack):
+  error, called at CSVParser.hs:24:30 in common-0.1.0.0-inplace:CSVParser
+[30/Jul/2018:09:12:05 +0800] Exception leaked to httpSession during phase 'sending-response': 
+During processing of request from ::1:53352
+request:
+"GET /getlocations HTTP/1.1\naccept-language: en-US,en;q=0.9\naccept-encoding: gzip, deflate, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36\nupgrade-insecure-requests: 1\ncache-control: max-age=0\nconnection: keep-alive\nhost: localhost:8001\n\nsn=\"localhost:8001\" c=::1:53352 s=::1:8001 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+parse error (Failed reading: conversion error: cannot unpack array of length 5 into a 5-tuple. Input record: ["\228\188\145\230\129\175","0","\231\159\179\231\162\135\230\156\141\229\139\153\229\141\128","\231\159\179\231\162\135\229\141\128\230\150\135\229\177\177\232\183\175\228\184\128\230\174\181\&6\232\153\159","(25.0077814,121.6323265)"]) at 
+å°é»,1,æ·éå°é»å¤§æ¨ç«1èåºå£,èºåå¸ä¸­æ­£åç¾æ¯ç¦è·¯3æ®µ126ä¹5è,"(25.0205742 (truncated)
+CallStack (from HasCallStack):
+  error, called at CSVParser.hs:24:30 in common-0.1.0.0-inplace:CSVParser
+[30/Jul/2018:09:12:05 +0800] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from ::1:53352
+request:
+"GET /getlocations HTTP/1.1\naccept-language: en-US,en;q=0.9\naccept-encoding: gzip, deflate, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36\nupgrade-insecure-requests: 1\ncache-control: max-age=0\nconnection: keep-alive\nhost: localhost:8001\n\nsn=\"localhost:8001\" c=::1:53352 s=::1:8001 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TerminateSessionException parse error (Failed reading: conversion error: cannot unpack array of length 5 into a 5-tuple. Input record: ["\228\188\145\230\129\175","0","\231\159\179\231\162\135\230\156\141\229\139\153\229\141\128","\231\159\179\231\162\135\229\141\128\230\150\135\229\177\177\232\183\175\228\184\128\230\174\181\&6\232\153\159","(25.0077814,121.6323265)"]) at 
+å°é»,1,æ·éå°é»å¤§æ¨ç«1èåºå£,èºåå¸ä¸­æ­£åç¾æ¯ç¦è·¯3æ®µ126ä¹5è,"(25.0205742 (truncated)
+CallStack (from HasCallStack):
+  error, called at CSVParser.hs:24:30 in common-0.1.0.0-inplace:CSVParser
+[30/Jul/2018:09:12:10 +0800] Exception leaked to httpSession during phase 'sending-response': 
+During processing of request from ::1:53358
+request:
+"GET /getlocations HTTP/1.1\naccept-language: en-US,en;q=0.9\naccept-encoding: gzip, deflate, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36\nupgrade-insecure-requests: 1\ncache-control: max-age=0\nconnection: keep-alive\nhost: localhost:8001\n\nsn=\"localhost:8001\" c=::1:53358 s=::1:8001 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+parse error (Failed reading: conversion error: cannot unpack array of length 5 into a 5-tuple. Input record: ["\228\188\145\230\129\175","0","\231\159\179\231\162\135\230\156\141\229\139\153\229\141\128","\231\159\179\231\162\135\229\141\128\230\150\135\229\177\177\232\183\175\228\184\128\230\174\181\&6\232\153\159","(25.0077814,121.6323265)"]) at 
+å°é»,1,æ·éå°é»å¤§æ¨ç«1èåºå£,èºåå¸ä¸­æ­£åç¾æ¯ç¦è·¯3æ®µ126ä¹5è,"(25.0205742 (truncated)
+CallStack (from HasCallStack):
+  error, called at CSVParser.hs:24:30 in common-0.1.0.0-inplace:CSVParser
+[30/Jul/2018:09:12:10 +0800] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from ::1:53358
+request:
+"GET /getlocations HTTP/1.1\naccept-language: en-US,en;q=0.9\naccept-encoding: gzip, deflate, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36\nupgrade-insecure-requests: 1\ncache-control: max-age=0\nconnection: keep-alive\nhost: localhost:8001\n\nsn=\"localhost:8001\" c=::1:53358 s=::1:8001 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TerminateSessionException parse error (Failed reading: conversion error: cannot unpack array of length 5 into a 5-tuple. Input record: ["\228\188\145\230\129\175","0","\231\159\179\231\162\135\230\156\141\229\139\153\229\141\128","\231\159\179\231\162\135\229\141\128\230\150\135\229\177\177\232\183\175\228\184\128\230\174\181\&6\232\153\159","(25.0077814,121.6323265)"]) at 
+å°é»,1,æ·éå°é»å¤§æ¨ç«1èåºå£,èºåå¸ä¸­æ­£åç¾æ¯ç¦è·¯3æ®µ126ä¹5è,"(25.0205742 (truncated)
+CallStack (from HasCallStack):
+  error, called at CSVParser.hs:24:30 in common-0.1.0.0-inplace:CSVParser
+[30/Jul/2018:09:12:37 +0800] Exception leaked to httpSession during phase 'sending-response': 
+During processing of request from ::1:53360
+request:
+"GET /getlocations HTTP/1.1\naccept-language: en-US,en;q=0.9\naccept-encoding: gzip, deflate, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36\nupgrade-insecure-requests: 1\nconnection: keep-alive\nhost: localhost:8001\n\nsn=\"localhost:8001\" c=::1:53360 s=::1:8001 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+parse error (Failed reading: conversion error: cannot unpack array of length 5 into a 5-tuple. Input record: ["\228\188\145\230\129\175","0","\231\159\179\231\162\135\230\156\141\229\139\153\229\141\128","\231\159\179\231\162\135\229\141\128\230\150\135\229\177\177\232\183\175\228\184\128\230\174\181\&6\232\153\159","(25.0077814,121.6323265)"]) at 
+å°é»,1,æ·éå°é»å¤§æ¨ç«1èåºå£,èºåå¸ä¸­æ­£åç¾æ¯ç¦è·¯3æ®µ126ä¹5è,"(25.0205742 (truncated)
+CallStack (from HasCallStack):
+  error, called at CSVParser.hs:24:30 in common-0.1.0.0-inplace:CSVParser
+[30/Jul/2018:09:12:37 +0800] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from ::1:53360
+request:
+"GET /getlocations HTTP/1.1\naccept-language: en-US,en;q=0.9\naccept-encoding: gzip, deflate, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36\nupgrade-insecure-requests: 1\nconnection: keep-alive\nhost: localhost:8001\n\nsn=\"localhost:8001\" c=::1:53360 s=::1:8001 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TerminateSessionException parse error (Failed reading: conversion error: cannot unpack array of length 5 into a 5-tuple. Input record: ["\228\188\145\230\129\175","0","\231\159\179\231\162\135\230\156\141\229\139\153\229\141\128","\231\159\179\231\162\135\229\141\128\230\150\135\229\177\177\232\183\175\228\184\128\230\174\181\&6\232\153\159","(25.0077814,121.6323265)"]) at 
+å°é»,1,æ·éå°é»å¤§æ¨ç«1èåºå£,èºåå¸ä¸­æ­£åç¾æ¯ç¦è·¯3æ®µ126ä¹5è,"(25.0205742 (truncated)
+CallStack (from HasCallStack):
+  error, called at CSVParser.hs:24:30 in common-0.1.0.0-inplace:CSVParser
+[30/Jul/2018:09:12:37 +0800] Exception leaked to httpSession during phase 'sending-response': 
+During processing of request from ::1:53362
+request:
+"GET /getlocations HTTP/1.1\naccept-language: en-US,en;q=0.9\naccept-encoding: gzip, deflate, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36\nupgrade-insecure-requests: 1\nconnection: keep-alive\nhost: localhost:8001\n\nsn=\"localhost:8001\" c=::1:53362 s=::1:8001 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+parse error (Failed reading: conversion error: cannot unpack array of length 5 into a 5-tuple. Input record: ["\228\188\145\230\129\175","0","\231\159\179\231\162\135\230\156\141\229\139\153\229\141\128","\231\159\179\231\162\135\229\141\128\230\150\135\229\177\177\232\183\175\228\184\128\230\174\181\&6\232\153\159","(25.0077814,121.6323265)"]) at 
+å°é»,1,æ·éå°é»å¤§æ¨ç«1èåºå£,èºåå¸ä¸­æ­£åç¾æ¯ç¦è·¯3æ®µ126ä¹5è,"(25.0205742 (truncated)
+CallStack (from HasCallStack):
+  error, called at CSVParser.hs:24:30 in common-0.1.0.0-inplace:CSVParser
+[30/Jul/2018:09:12:37 +0800] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from ::1:53362
+request:
+"GET /getlocations HTTP/1.1\naccept-language: en-US,en;q=0.9\naccept-encoding: gzip, deflate, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36\nupgrade-insecure-requests: 1\nconnection: keep-alive\nhost: localhost:8001\n\nsn=\"localhost:8001\" c=::1:53362 s=::1:8001 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TerminateSessionException parse error (Failed reading: conversion error: cannot unpack array of length 5 into a 5-tuple. Input record: ["\228\188\145\230\129\175","0","\231\159\179\231\162\135\230\156\141\229\139\153\229\141\128","\231\159\179\231\162\135\229\141\128\230\150\135\229\177\177\232\183\175\228\184\128\230\174\181\&6\232\153\159","(25.0077814,121.6323265)"]) at 
+å°é»,1,æ·éå°é»å¤§æ¨ç«1èåºå£,èºåå¸ä¸­æ­£åç¾æ¯ç¦è·¯3æ®µ126ä¹5è,"(25.0205742 (truncated)
+CallStack (from HasCallStack):
+  error, called at CSVParser.hs:24:30 in common-0.1.0.0-inplace:CSVParser
+[30/Jul/2018:09:12:38 +0800] Exception leaked to httpSession during phase 'sending-response': 
+During processing of request from ::1:53364
+request:
+"GET /getlocations HTTP/1.1\naccept-language: en-US,en;q=0.9\naccept-encoding: gzip, deflate, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36\nupgrade-insecure-requests: 1\ncache-control: max-age=0\nconnection: keep-alive\nhost: localhost:8001\n\nsn=\"localhost:8001\" c=::1:53364 s=::1:8001 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+parse error (Failed reading: conversion error: cannot unpack array of length 5 into a 5-tuple. Input record: ["\228\188\145\230\129\175","0","\231\159\179\231\162\135\230\156\141\229\139\153\229\141\128","\231\159\179\231\162\135\229\141\128\230\150\135\229\177\177\232\183\175\228\184\128\230\174\181\&6\232\153\159","(25.0077814,121.6323265)"]) at 
+å°é»,1,æ·éå°é»å¤§æ¨ç«1èåºå£,èºåå¸ä¸­æ­£åç¾æ¯ç¦è·¯3æ®µ126ä¹5è,"(25.0205742 (truncated)
+CallStack (from HasCallStack):
+  error, called at CSVParser.hs:24:30 in common-0.1.0.0-inplace:CSVParser
+[30/Jul/2018:09:12:38 +0800] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from ::1:53364
+request:
+"GET /getlocations HTTP/1.1\naccept-language: en-US,en;q=0.9\naccept-encoding: gzip, deflate, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36\nupgrade-insecure-requests: 1\ncache-control: max-age=0\nconnection: keep-alive\nhost: localhost:8001\n\nsn=\"localhost:8001\" c=::1:53364 s=::1:8001 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TerminateSessionException parse error (Failed reading: conversion error: cannot unpack array of length 5 into a 5-tuple. Input record: ["\228\188\145\230\129\175","0","\231\159\179\231\162\135\230\156\141\229\139\153\229\141\128","\231\159\179\231\162\135\229\141\128\230\150\135\229\177\177\232\183\175\228\184\128\230\174\181\&6\232\153\159","(25.0077814,121.6323265)"]) at 
+å°é»,1,æ·éå°é»å¤§æ¨ç«1èåºå£,èºåå¸ä¸­æ­£åç¾æ¯ç¦è·¯3æ®µ126ä¹5è,"(25.0205742 (truncated)
+CallStack (from HasCallStack):
+  error, called at CSVParser.hs:24:30 in common-0.1.0.0-inplace:CSVParser

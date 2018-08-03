@@ -1,0 +1,26 @@
+warning: Nix search path entry '/home/demo/.nix-defexpr/channels' does not exist, ignoring
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+[1 of 1] Compiling Main             ( GTable.hs, interpreted )
+
+GTable.hs:76:48: error:
+    • Could not deduce (Selectors a0) arising from a use of ‘selectors’
+      from the context: (Generic a,
+                         MonadWidget t m,
+                         Data a,
+                         GSelectors (Rep a),
+                         Selectors a)
+        bound by the type signature for:
+                   table :: (Generic a, MonadWidget t m, Data a, GSelectors (Rep a),
+                             Selectors a) =>
+                            Dynamic t [a] -> m ()
+        at GTable.hs:70:1-103
+      The type variable ‘a0’ is ambiguous
+    • In the second argument of ‘(<$>)’, namely
+        ‘selectors (undefined :: a)’
+      In the second argument of ‘($)’, namely
+        ‘pack . fst <$> selectors (undefined :: a)’
+      In the expression:
+        constDyn $ pack . fst <$> selectors (undefined :: a)
+Failed, modules loaded: none.
+Prelude> 
+

@@ -31,7 +31,7 @@ import Data.Either.Combinators (rightToMaybe)
 main :: IO ()
 main = do
   mapM_ (flip hSetEncoding utf8) [stdin,stdout,stderr]
-  txt <- BS.readFile "locations_gps.csv"
+  txt <- BS.readFile "../data/locations_gps.csv"
   let locations = either error (id) $ (decode NoHeader txt :: Either String (V.Vector Location)) 
   pPrintNoColor locations
 {-

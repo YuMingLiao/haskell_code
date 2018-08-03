@@ -11,12 +11,13 @@ import Servant.API
 import Data.Proxy
 import Reflex.Dom
 import GHC.Generics
-import Servant.Reflex 
+--import Servant.Reflex 
 import Types
 
 type API = "getint"  :> Get '[JSON] Int
       :<|> "getlist" :> Get '[JSON] [Person]
       :<|> "getdistricts" :> Get '[JSON] [District]
+      :<|> "getlocations" :> Get '[JSON] [Location]
       :<|> Raw
 
 

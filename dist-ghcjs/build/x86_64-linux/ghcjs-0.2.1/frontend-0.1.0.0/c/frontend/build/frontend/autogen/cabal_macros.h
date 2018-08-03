@@ -220,6 +220,39 @@
   (major1) == 0 && (major2) == 11 && (minor) <= 0)
 #endif /* MIN_VERSION_servant_client */
 
+/* package time-1.6.0.1 */
+#ifndef VERSION_time
+#define VERSION_time "1.6.0.1"
+#endif /* VERSION_time */
+#ifndef MIN_VERSION_time
+#define MIN_VERSION_time(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  6 || \
+  (major1) == 1 && (major2) == 6 && (minor) <= 0)
+#endif /* MIN_VERSION_time */
+
+/* package mtl-2.2.1 */
+#ifndef VERSION_mtl
+#define VERSION_mtl "2.2.1"
+#endif /* VERSION_mtl */
+#ifndef MIN_VERSION_mtl
+#define MIN_VERSION_mtl(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  2 || \
+  (major1) == 2 && (major2) == 2 && (minor) <= 1)
+#endif /* MIN_VERSION_mtl */
+
+/* package data-default-0.7.1.1 */
+#ifndef VERSION_data_default
+#define VERSION_data_default "0.7.1.1"
+#endif /* VERSION_data_default */
+#ifndef MIN_VERSION_data_default
+#define MIN_VERSION_data_default(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  7 || \
+  (major1) == 0 && (major2) == 7 && (minor) <= 1)
+#endif /* MIN_VERSION_data_default */
+
 /* tool gcc-7.3.0 */
 #ifndef TOOL_VERSION_gcc
 #define TOOL_VERSION_gcc "7.3.0"

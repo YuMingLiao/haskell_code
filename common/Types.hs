@@ -1,6 +1,5 @@
 {-# Language RecordWildCards, FunctionalDependencies, DuplicateRecordFields, TemplateHaskell, FlexibleInstances, DeriveAnyClass, TypeSynonymInstances, MultiParamTypeClasses #-}
 
---for generic-lens
 {-# LANGUAGE AllowAmbiguousTypes       #-}
 {-# LANGUAGE DataKinds                 #-}
 {-# LANGUAGE DeriveGeneric             #-}
@@ -8,12 +7,20 @@
 {-# LANGUAGE FlexibleContexts          #-}
 {-# LANGUAGE NoMonomorphismRestriction #-}
 {-# LANGUAGE TypeApplications          #-}
+{-# LANGUAGE DeriveDataTypeable #-}
+{-# LANGUAGE TypeOperators #-}
+{-# Language OverloadedStrings #-}
+{-# Language RankNTypes #-}
+{-# LANGUAGE PolyKinds #-}
+{-# LANGUAGE ScopedTypeVariables #-}
+{-# LANGUAGE DeriveDataTypeable #-}
 
 module Types where
-import Data.Types.Isomorphic
+import qualified Data.Types.Isomorphic as Iso
 import Data.List
 import Data.Csv
-import GHC.Generics(Generic)
+import Data.Data
+import GHC.Generics
 import Data.Text (Text,pack)
 import Control.Lens hiding ((.=),to,both)
 import Control.Arrow ((>>>),(&&&))
@@ -23,7 +30,9 @@ import Data.Vector (Vector,(!))
 import Control.Monad (mzero)
 import qualified Data.ByteString.Char8 as B
 import Data.Aeson
---import GoogleMapsReflex.JSTypes.LatLng
+import GoogleMapsReflex.JSTypes.LatLng
+import GoogleMapsReflex
+import GoogleMapsReflex.JSTypes.Marker
 
 data Num = Int
 type From = Loc
@@ -36,21 +45,21 @@ type Stops = [Loc]
 data Route = Route Origin Stops Destination deriving Show
 type Path = [(Loc,Loc)]
 
-
 data District = District {
    _name :: !Text
  , _code :: !Text
  , _lat  :: !Double
  , _lng  :: !Double
- } deriving (Show, Generic, FromRecord, ToRecord, FromJSON, ToJSON)
+ } deriving (Show, Data, Generic, FromRecord, ToRecord, FromJSON, ToJSON)
 
 data Location = Loc {
    _goal :: !Text
  , _idn  :: !Int
  , _name :: !Text
  , _address :: !Text
- , _gps_coord :: !(Double,Double)
-} deriving (Show, Generic,FromRecord,ToRecord)
+ , _lat :: !Double
+ , _lng :: !Double
+} deriving (Show, Data, Generic, FromRecord, ToRecord, FromJSON, ToJSON)
 
 instance FromRecord Text where
   parseRecord v = pack . B.unpack <$> v .! 0
@@ -75,6 +84,7 @@ instance ToField (Double, Double) where
   toField tup = B.pack . show $ tup 
 
 makeFieldsNoPrefix ''Location
+
 {-
 instance FromRecord Location where
     parseRecord v
@@ -100,7 +110,6 @@ data Car = Car {
   , task :: Persons
   , route :: Route
 } deriving (Show)
-type Cars = [Car]
 
 type People = Int
 data PickupPoint = PP Loc People deriving Show
@@ -109,10 +118,10 @@ instance Monoid Queue where
   mempty = Q []
   (Q xs) `mappend` (Q ys) = Q (xs ++ ys) 
 
-instance Injective [PickupPoint] Queue where
-  to ((PP loc ppl):xs) = (Q $ replicate ppl loc) `mappend` to xs
+instance Iso.Injective [PickupPoint] Queue where
+  to ((PP loc ppl):xs) = (Q $ replicate ppl loc) `mappend` Iso.to xs
   to [] = Q [] 
-instance Injective Queue [PickupPoint] where
+instance Iso.Injective Queue [PickupPoint] where
   to (Q xs) = PP <$> (nub xs) <*> (map length $ group xs) 
 
 showPickupPoint :: PickupPoint -> String
@@ -130,7 +139,9 @@ getDistance m p = sum $ map (\(x,y) -> getElem (x+1) (y+1) m) p
 data Person = Person {
     _name :: !Text
  ,  _location :: !Int
- } deriving (Show, Generic,FromRecord,ToRecord,FromJSON,ToJSON)
+ } deriving (Show, Data, Generic, FromRecord, ToRecord, FromJSON, ToJSON)
+
+
 makeFieldsNoPrefix ''Person
 makeFieldsNoPrefix ''District
 
@@ -149,5 +160,47 @@ countDefaultMatrix (x,y) = distance (fromIntegral x,fromIntegral x) (fromIntegra
 distance :: (Double,Double) -> (Double,Double) -> Double
 distance (a,b) (c,d) = sqrt ((abs (a-c))^2 + (abs(b-d))^2)
 
+class RecordText a where
+  rtext :: a -> [Text]
+
+instance RecordText Person where
+    rtext Person{..} = [_name, (pack.show) _location]
+
+instance RecordText District where
+  rtext District{..} = [_name, _code, (pack.show) _lat, (pack.show) _lng] 
+
+instance RecordText Location where
+  rtext Loc{..} = [_goal, (pack.show) _idn, _name, _address, (pack.show) _lat, (pack.show) _lng]
+
+
+
+
+
+
+
+class GSelectors a where
+  gselectors :: Proxy a -> [(String, TypeRep)]
+
+instance GSelectors U1 where
+  gselectors _ = []
+
+-- Product branch
+instance (GSelectors a, GSelectors b) => GSelectors (a :*: b) where
+  gselectors _ = gselectors (Proxy :: Proxy a) ++ gselectors (Proxy :: Proxy b)
+
+-- Datatype
+instance GSelectors f => GSelectors (M1 D x f) where
+  gselectors _ = gselectors (Proxy :: Proxy f)
+
+-- Constructor Metadata
+instance GSelectors f => GSelectors (M1 C x f) where
+  gselectors _ = gselectors (Proxy :: Proxy f)
+
+-- Selector Metadata && Constructor Parameter
+instance (Selector s, Typeable t) => GSelectors (M1 S s (K1 R t)) where
+  gselectors _ =
+    [ ( selName (undefined :: M1 S s (K1 R t) ()) , typeOf (undefined :: t) ) ]
+
+type Resource = [Car]
 
 

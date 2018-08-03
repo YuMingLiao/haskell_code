@@ -176,6 +176,28 @@
   (major1) == 1 && (major2) == 2 && (minor) <= 2)
 #endif /* MIN_VERSION_aeson */
 
+/* package syb-0.7 */
+#ifndef VERSION_syb
+#define VERSION_syb "0.7"
+#endif /* VERSION_syb */
+#ifndef MIN_VERSION_syb
+#define MIN_VERSION_syb(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  7 || \
+  (major1) == 0 && (major2) == 7 && (minor) <= 0)
+#endif /* MIN_VERSION_syb */
+
+/* package google-maps-reflex-0.1.0.0 */
+#ifndef VERSION_google_maps_reflex
+#define VERSION_google_maps_reflex "0.1.0.0"
+#endif /* VERSION_google_maps_reflex */
+#ifndef MIN_VERSION_google_maps_reflex
+#define MIN_VERSION_google_maps_reflex(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  1 || \
+  (major1) == 0 && (major2) == 1 && (minor) <= 0)
+#endif /* MIN_VERSION_google_maps_reflex */
+
 /* tool cpphs-1.20.8 */
 #ifndef TOOL_VERSION_cpphs
 #define TOOL_VERSION_cpphs "1.20.8"

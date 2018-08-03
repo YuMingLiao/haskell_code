@@ -4,8 +4,10 @@
 {-# Language TypeOperators #-}
 {-# Language DeriveGeneric #-}
 {-# Language ScopedTypeVariables #-}
---  {-# Language AllowAmbiguousTypes #-}
-import Reflex.Dom
+{-# Language GADTs #-}
+{-# Language FlexibleContexts #-}
+
+import Reflex.Dom hiding (Click)
 import MapWidget
 import Common
 import Servant.Reflex
@@ -16,69 +18,68 @@ import Types
 import qualified Data.Text as T
 import Text.Pretty.Simple
 import Control.Lens
+import GoogleMapsReflex
+import Data.Map hiding (map)
+import GTable (table, dynTable)
+import Data.Functor
+import TypeClass
 
 --import Servant.Common.BaseUrl
 main :: IO ()
 main = mainWidget $ do
   demo
-  display =<< count =<< button "ClickMe"
-  mapWidget config
+  return ()
+--  mapWithConfigDyn
+
+bt2display name api = 
+  elClass "div" name $ do
+    bt  <- button name
+    ev <- fmapMaybe reqSuccess <$> api bt
+    display =<< holdDyn 0 ev
+
+bt2Table name api =
+  elClass "div" name $ do
+    bt  <- button name
+    ev <- fmapMaybe reqSuccess <$> api bt
+    dynTable name ev
+
+bt_ev name api = do
+    bt  <- button name
+    ev <- fmapMaybe reqSuccess <$> api bt
+    return ev
 
 demo :: forall t m. MonadWidget t m => m ()
 demo = do
-  let (getint :<|> getplist :<|> getdistricts :<|> _) = 
+  let (getint :<|> getplist :<|> getdistricts :<|> getlocations :<|> _) = 
                                client (Proxy :: Proxy API)
                                (Proxy :: Proxy m)
                                (Proxy :: Proxy ())
                                (constDyn (BaseFullUrl Http "localhost" 8001 ""))
-  elClass "div" "int-demo" $ do
-    intButton  <- button "Get Int"
-    serverInts <- fmapMaybe reqSuccess <$> getint intButton
-    display =<< holdDyn 0 serverInts
+  bt2display "int2" getint
+  bt2Table "people" getplist
+  bt2Table "districts" getdistricts
+  bt2Table "locations" getlocations
 
-  elClass "div" "plist-demo" $ do
-    plistButton  <- button "Get People List"
-    serverPList <- fmapMaybe reqSuccess <$> getplist plistButton
-    pListDyn <- holdDyn [] serverPList
+  ev <- bt_ev "locations" getlocations
+  ld <- (holdDyn [] ev)
+  configDyn <- return $ fmap mkConfig ld 
+  mapWidgetDyn configDyn
 
-    el "table" $ do
-      el "tr" $ do
-        el "td" $ text "name"
-        el "td" $ text "location"
-      simpleList pListDyn displayPersonRow
+--  pb <- getPostBuild >>= delay 0.1 --wait rendering
+--  configDyn <- holdDyn config (pb $> config)
+--  mapWidgetDyn configDyn
+  return ()
 
-  elClass "div" "districts-demo" $ do
-    btn <- button "Get Districts"
-    serverDList <- fmapMaybe reqSuccess <$> getdistricts btn 
-    dListDyn <- holdDyn [] serverDList
+-- api2dyn api =
 
-    el "table" $ do
-      el "tr" $ do
-        el "td" $ text "name"
-        el "td" $ text "code"
-        el "td" $ text "lag"
-        el "td" $ text "lng"
-      simpleList dListDyn displayDistrictRow
+mapWidgetDyn :: MonadWidget t m => Dynamic t (Config Int)  -> m ()
+mapWidgetDyn configDyn = do
+  (Element _ mapEl, _) <- elAttr' "div" ("style" =: "width: 500px; height: 600px;") blank
+  maps <- googleMaps mapEl (ApiKey "AIzaSyAXn2V4wLK1QeU6YEFBFCApDQBPyajr8d0") configDyn
+  mc <- mapEvent Click maps 
+  return ()
 
-
-
-    return ()
-
-displayPersonRow :: MonadWidget t m => Dynamic t Person -> m ()--(Event t T.Text)
-displayPersonRow dynPer = do 
-  el "tr" $ do
-    el "td" $ dynText $ (^.name) <$> dynPer
-    el "td" $ display $ (^.location) <$> dynPer
-
-displayDistrictRow :: MonadWidget t m => Dynamic t District -> m ()--(Event t T.Text)
-displayDistrictRow dynDis = do 
-  el "tr" $ do
-    el "td" $ dynText $ (^.name) <$> dynDis
-    el "td" $ dynText $ (^.code) <$> dynDis
-    el "td" $ display $ (^.lat) <$> dynDis
-    el "td" $ display $ (^.lng) <$> dynDis
-
-
-
-
-
+mkConfig :: [Location] -> Config Int
+mkConfig xs = config {
+  _config_markers = fromList $ zipWith (,) [0..] (map marker xs) }
+  --_config_infoWindows = fromList $ zipWith (,) [0..] (replicate 3 def)
